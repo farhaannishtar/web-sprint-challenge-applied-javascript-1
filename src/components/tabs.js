@@ -22,7 +22,6 @@ const Tabs = (topics) => {
     topicElement.classList.add("tab");
     topicsDiv.appendChild(topicElement); 
   });
-  console.log(topicsDiv);
   return topicsDiv;
 }
 
