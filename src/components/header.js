@@ -43,12 +43,12 @@ const headerAppender = (selector) => {
   // It should create a header using the Header component above, passing arguments of your choosing.
   // It should append the header to the element in the DOM that matches the given selector.
   //
-  const header = Header("Lorem", "Ifsum", "Dimsum");
+  const header = Header("Lorem", "Ifsum", "Sit");
 
   const wrapper = document.createElement("div");
-  wrapper.classList.add(selector);
+
   wrapper.appendChild(header)
-  document.querySelector("body").appendChild(wrapper);
+  document.querySelector(selector).appendChild(wrapper);
 }
 
 export { Header, headerAppender }

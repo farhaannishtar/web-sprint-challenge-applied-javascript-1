@@ -38,9 +38,10 @@ const tabsAppender = (selector) => {
     const tabs = res.data.topics;
     const tabsComponent = Tabs(tabs);
     const wrapper = document.createElement("div");
-    wrapper.classList.add(selector);
+
+    // Adding selector
     wrapper.appendChild(tabsComponent);
-    document.querySelector("body").appendChild(wrapper);
+    document.querySelector(selector).appendChild(wrapper);
   })
   .catch(err => console.error(err));
 }

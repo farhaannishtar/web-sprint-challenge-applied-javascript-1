@@ -67,7 +67,7 @@ const cardAppender = (selector) => {
         const headline = element.headline;
         const authorPhoto = element.authorPhoto;
         const authorName = element.authorName;
-        
+
         const cardObj = {
           headline,
           authorPhoto,
@@ -77,7 +77,7 @@ const cardAppender = (selector) => {
         wrapper.appendChild(card)
       })
     }
-    document.querySelector("body").appendChild(wrapper);
+    document.querySelector(selector).appendChild(wrapper);
   })
   .catch(err => console.error(err));  
 }
