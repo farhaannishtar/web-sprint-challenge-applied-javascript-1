@@ -48,13 +48,7 @@ const headerAppender = (selector) => {
   const wrapper = document.createElement("div");
   wrapper.classList.add(selector);
   wrapper.appendChild(header)
-
-
   document.querySelector("body").appendChild(wrapper);
-
-
-  // console.log(header);
-  // return header;
 }
 
 export { Header, headerAppender }

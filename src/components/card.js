@@ -31,19 +31,11 @@ const Card = (article) => {
   img.src = article.authorPhoto;
   byAuthorSpan.textContent = article.authorName;
 
-
   // Adding classes
   cardDiv.classList.add("card");
   headlineDiv.classList.add("headline");
   authorDiv.classList.add("author");
   imgContainer.classList.add("img-container");
-
-  // Adding image source
-  // img.src = 
-
-
-  // Assigning Values
-  // dateElement.textContent = date;
 
   // Connecting them together
   cardDiv.appendChild(headlineDiv);
@@ -52,7 +44,6 @@ const Card = (article) => {
   authorDiv.appendChild(byAuthorSpan);
   imgContainer.appendChild(img);
 
-  console.log()
   return cardDiv;
 }
 
@@ -79,7 +70,7 @@ const cardAppender = (selector) => {
         const headline = element.headline;
         const authorPhoto = element.authorPhoto;
         const authorName = element.authorName;
-        
+
         const cardObj = {
           headline,
           authorPhoto,
@@ -93,7 +84,7 @@ const cardAppender = (selector) => {
     }
     document.querySelector("body").appendChild(wrapper);
   })
-  .catch(err => console.error);  
+  .catch(err => console.error(err));  
 }
 
 export { Card, cardAppender }
