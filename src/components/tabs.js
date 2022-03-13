@@ -42,7 +42,7 @@ const tabsAppender = (selector) => {
     wrapper.appendChild(tabsComponent);
     document.querySelector("body").appendChild(wrapper);
   })
-  .catch(err => console.error);
+  .catch(err => console.error(err));
 }
 
 export { Tabs, tabsAppender }

@@ -62,23 +62,18 @@ const cardAppender = (selector) => {
     const wrapper = document.createElement("div");
     wrapper.classList.add(selector);
 
-    console.log("technologies", (technologies));
-
-
     for (const property in technologies) {
       technologies[property].forEach((element) => {
         const headline = element.headline;
         const authorPhoto = element.authorPhoto;
         const authorName = element.authorName;
-
+        
         const cardObj = {
           headline,
           authorPhoto,
           authorName
         }
-
         const card = Card(cardObj);
-        console.log(card);
         wrapper.appendChild(card)
       })
     }
