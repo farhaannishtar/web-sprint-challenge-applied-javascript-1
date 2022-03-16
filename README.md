@@ -60,7 +60,25 @@ In meeting the minimum viable product (MVP) specifications listed below, your pr
 Demonstrate your understanding of this week's concepts by answering the following questions:
 
 1. What is the DOM?
+
+The Document Object Model is a programming interface used to access and manipulate HTML documents. It defines the logical structure of HTML documents by representing each element as an object. The DOM can be used by JavaScript to change the document’s structure, style, and content.
+
+
 2. What is an event?
+
+An event is a signal that something has occurred on the webpage. It is usually triggered by a user interacting with the website.  This can be in form of a button click or submitting a form.
+
+
 3. What is an event listener?
+    
+    An event listener handles the event being triggered. It executes a callback function in response  to the event such as retrieving information from a database upon a button click.  
+    
+
 4. Why would we convert a NodeList into an Array?
+
+We convert NodeLists to Arrays when we want to use array methods to manipulate the collection of data. 
+
+
 5. What is a component?
+
+A component is a logically isolated
