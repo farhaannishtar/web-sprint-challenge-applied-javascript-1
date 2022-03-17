@@ -71,7 +71,7 @@ An event is a signal that something has occurred on the webpage. It is usually t
 
 3. What is an event listener?
     
-    An event listener handles the event being triggered. It executes a callback function in response  to the event such as retrieving information from a database upon a button click.  
+An event listener handles the event being triggered. It executes a callback function in response  to the event such as retrieving information from a database upon a button click.  
     
 
 4. Why would we convert a NodeList into an Array?
