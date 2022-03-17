@@ -81,4 +81,4 @@ We convert NodeLists to Arrays when we want to use array methods to manipulate t
 
 5. What is a component?
 
-A component is a logically isolated
+A component is a logically isolated piece of code. It is a JavaScript class or function that optionally accepts inputs known as properties (props) and returns a React element that describes how a section of the UI (User Interface) should appear.
